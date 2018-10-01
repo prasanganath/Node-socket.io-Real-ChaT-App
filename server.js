@@ -13,7 +13,7 @@ mongo.connect('mongodb://127.0.0.1/chat',function(err, db){
 
 			}; 
 
-		//Emit all messages	///
+		
 
 		col.find().limit(100).sort({_id: 1}).toArray(function(){
 			if (err) throw err; 
